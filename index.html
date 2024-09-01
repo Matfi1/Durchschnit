@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оценки</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Расчет среднего балла от Матфея (🤓)</h1>
+        <form id="gradesForm">
+            <label for="country">Выберите страну:</label>
+            <select id="country" required>
+                <option value="de">Германия</option>
+                <option value="ua">Украина</option>
+                <option value="ru">Россия</option>
+                <option value="es">Испания</option>
+            </select>
+
+            <label for="grades">Введите оценки (через запятую):</label>
+            <input type="text" id="grades" placeholder="Например: 1, 2, 3, 4" required>
+
+            <button type="submit">Рассчитать</button>
+        </form>
+        <div id="result"></div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
